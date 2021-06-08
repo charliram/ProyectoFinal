@@ -11,6 +11,6 @@ package misclases;
  */
 public class prueba {
     public static void main(String[] args) {
-        System.out.println("Hola buenas Tardes");
+        System.out.println("noches ya ");
     }
 }
