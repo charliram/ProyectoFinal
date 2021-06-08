@@ -29,14 +29,6 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jTextFieldCuentaRegistr = new javax.swing.JTextField();
-        jButtonRegistrar = new javax.swing.JButton();
-        jButtonLimpiarRegistro = new javax.swing.JButton();
-        jPasswordRegistro = new javax.swing.JPasswordField();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -47,87 +39,6 @@ public class Login extends javax.swing.JFrame {
         jPasswordLogin = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.setForeground(new java.awt.Color(153, 255, 255));
-        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        jLabel1.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
-        jLabel1.setText("Registro de cuentas");
-        jLabel1.setBorder(javax.swing.BorderFactory.createCompoundBorder());
-
-        jLabel2.setText("Cuenta:");
-
-        jLabel3.setText("Contraseña:");
-
-        jTextFieldCuentaRegistr.setText(" ");
-        jTextFieldCuentaRegistr.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jButtonRegistrar.setText("Registrar");
-        jButtonRegistrar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButtonRegistrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonRegistrarActionPerformed(evt);
-            }
-        });
-
-        jButtonLimpiarRegistro.setText("Limpiar");
-        jButtonLimpiarRegistro.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButtonLimpiarRegistro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonLimpiarRegistroActionPerformed(evt);
-            }
-        });
-
-        jPasswordRegistro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(114, 114, 114)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButtonRegistrar)
-                                .addGap(62, 62, 62)
-                                .addComponent(jButtonLimpiarRegistro))
-                            .addComponent(jTextFieldCuentaRegistr, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE)
-                            .addComponent(jPasswordRegistro))))
-                .addContainerGap(160, Short.MAX_VALUE))
-        );
-
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jPasswordRegistro, jTextFieldCuentaRegistr});
-
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jTextFieldCuentaRegistr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(11, 11, 11)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jPasswordRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonRegistrar)
-                    .addComponent(jButtonLimpiarRegistro))
-                .addContainerGap(46, Short.MAX_VALUE))
-        );
-
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jPasswordRegistro, jTextFieldCuentaRegistr});
 
         jPanel2.setBackground(new java.awt.Color(255, 204, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -180,7 +91,7 @@ public class Login extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jTextFieldCuentaLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
                         .addComponent(jPasswordLogin)))
-                .addContainerGap(154, Short.MAX_VALUE))
+                .addContainerGap(93, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
@@ -203,60 +114,30 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonLogin)
                     .addComponent(jButtonLimpiarLogin))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jPanel1, jPanel2});
-
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButtonLimpiarRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimpiarRegistroActionPerformed
-        // TODO add your handling code here:
-        this.jPasswordRegistro.setText("");
-        this.jTextFieldCuentaRegistr.setText("");
-    }//GEN-LAST:event_jButtonLimpiarRegistroActionPerformed
 
     private void jButtonLimpiarLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimpiarLoginActionPerformed
         // TODO add your handling code here:
         this.jTextFieldCuentaLogin.setText("");
         this.jPasswordLogin.setText("");
     }//GEN-LAST:event_jButtonLimpiarLoginActionPerformed
-
-    private void jButtonRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegistrarActionPerformed
-        // TODO add your handling code here:
-        String cuenta,contraseña,parte1,parte2,query;
-        cuenta=this.jTextFieldCuentaRegistr.getText().trim();
-        char[] passw=this.jPasswordRegistro.getPassword();
-        
-        contraseña=new String(passw);
-        parte1="Insert into cuentas VALUES (";
-        parte2= "'"+ cuenta+"',"+" MD5('"+ contraseña + "'))";
-        query=parte1+parte2;
-        System.out.println(query);
-        int j=this.conn.Update(query);
-        if(j>0){
-            System.out.println("Cuenta Registrada...");
-            JOptionPane.showMessageDialog(this, "Cuenta Registrada...");
-            
-        }
-    }//GEN-LAST:event_jButtonRegistrarActionPerformed
 
     private void jButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLoginActionPerformed
         // TODO add your handling code here:
@@ -272,6 +153,8 @@ public class Login extends javax.swing.JFrame {
             if (contraseñaMySql.equals(contraseñaencriptada)) {
                 System.out.println("Bienvenido al sistema: "+this.conn.rs.getString(1));
                 JOptionPane.showMessageDialog(this, "Bienvenido "+ this.conn.rs.getString(1)+ " al sistema");
+                new MenuPrincipal().setVisible(true);
+                dispose();
             }else{
                 JOptionPane.showMessageDialog(this, "Error en la consola");
             }
@@ -319,20 +202,12 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonLimpiarLogin;
-    private javax.swing.JButton jButtonLimpiarRegistro;
     private javax.swing.JButton jButtonLogin;
-    private javax.swing.JButton jButtonRegistrar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField jPasswordLogin;
-    private javax.swing.JPasswordField jPasswordRegistro;
     private javax.swing.JTextField jTextFieldCuentaLogin;
-    private javax.swing.JTextField jTextFieldCuentaRegistr;
     // End of variables declaration//GEN-END:variables
 }

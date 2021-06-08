@@ -27,17 +27,46 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButtonCheckIN = new javax.swing.JButton();
+        jButtoncheckOUT = new javax.swing.JButton();
+        jButtonConsultas = new javax.swing.JButton();
+        jButtonSALIR = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jButtonCheckIN.setText("CHECK IN");
+
+        jButtoncheckOUT.setText("CHECK OUT");
+
+        jButtonConsultas.setText("CONSULTAS");
+
+        jButtonSALIR.setText("SALIR");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 629, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addComponent(jButtonCheckIN)
+                .addGap(40, 40, 40)
+                .addComponent(jButtoncheckOUT)
+                .addGap(28, 28, 28)
+                .addComponent(jButtonConsultas)
+                .addGap(45, 45, 45)
+                .addComponent(jButtonSALIR)
+                .addContainerGap(128, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 377, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(69, 69, 69)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonCheckIN)
+                    .addComponent(jButtoncheckOUT)
+                    .addComponent(jButtonConsultas)
+                    .addComponent(jButtonSALIR))
+                .addContainerGap(285, Short.MAX_VALUE))
         );
 
         pack();
@@ -79,5 +108,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonCheckIN;
+    private javax.swing.JButton jButtonConsultas;
+    private javax.swing.JButton jButtonSALIR;
+    private javax.swing.JButton jButtoncheckOUT;
     // End of variables declaration//GEN-END:variables
 }
