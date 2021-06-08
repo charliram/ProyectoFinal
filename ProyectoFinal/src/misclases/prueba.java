@@ -10,6 +10,7 @@ package misclases;
  * @author juanc
  */
 public class prueba {
-   //hola amigos
-   //  de youtube estamos en un nuevo video
+    public static void main(String[] args) {
+        System.out.println("Hola buenas Tardes");
+    }
 }
