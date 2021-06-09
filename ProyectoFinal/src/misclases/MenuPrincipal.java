@@ -39,8 +39,18 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButtoncheckOUT.setText("CHECK OUT");
 
         jButtonConsultas.setText("CONSULTAS");
+        jButtonConsultas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonConsultasActionPerformed(evt);
+            }
+        });
 
         jButtonSALIR.setText("SALIR");
+        jButtonSALIR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSALIRActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -71,6 +81,17 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonConsultasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConsultasActionPerformed
+        // TODO add your handling code here:
+        new Consultas().setVisible(true);
+        
+    }//GEN-LAST:event_jButtonConsultasActionPerformed
+
+    private void jButtonSALIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSALIRActionPerformed
+        // TODO add your handling code here:
+        System.exit(WIDTH);
+    }//GEN-LAST:event_jButtonSALIRActionPerformed
 
     /**
      * @param args the command line arguments
