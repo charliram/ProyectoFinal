@@ -58,9 +58,9 @@ public class MySqlConn {
              rModif= stmt.executeUpdate(query);
         }
         catch (SQLException ex){
-            System.out.println("SQLException: " + ex.getMessage());
-            System.out.println("SQLState: " + ex.getSQLState());
-            System.out.println("Error: " + ex.getErrorCode());
+           // System.out.println("SQLException: " + ex.getMessage());
+          //  System.out.println("SQLState: " + ex.getSQLState());
+            //System.out.println("Error: " + ex.getErrorCode());
         }
         return rModif;
     }

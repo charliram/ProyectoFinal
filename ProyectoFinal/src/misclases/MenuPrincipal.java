@@ -5,16 +5,40 @@
  */
 package misclases;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 /**
  *
  * @author fer_o
  */
 public class MenuPrincipal extends javax.swing.JFrame {
-
+    private MySqlConn conn=new MySqlConn();
+    
+   Connection con=conn.conn;
     /**
      * Creates new form MenuPrincipal
      */
     public MenuPrincipal() {
+        String p="1",tp="0";
+        int nh=0;
+        for (int i = 0; i < 15; i++) {
+            nh=i;
+            if(i<6){
+                tp="1";
+            }
+            if(i>=6 && i<=12){
+                tp="2";
+            }
+            if(i>12){
+                tp="3";
+            }
+            String parte1="Insert into huespedes(piso, numhab, tipohab) VALUES (";
+            String parte2="'"+p+"','"+nh+"','"+tp+"')";
+             String query= parte1+parte2;     
+            this.conn.Update(query);
+        }
         initComponents();
     }
 
@@ -35,6 +59,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButtonCheckIN.setText("CHECK IN");
+        jButtonCheckIN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCheckINActionPerformed(evt);
+            }
+        });
 
         jButtoncheckOUT.setText("CHECK OUT");
 
@@ -92,6 +121,18 @@ public class MenuPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(WIDTH);
     }//GEN-LAST:event_jButtonSALIRActionPerformed
+
+    private void jButtonCheckINActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCheckINActionPerformed
+        
+        
+        try{
+            PreparedStatement pps=this.con.prepareStatement("UPDATE huespedes SET nombre='juan',ciudad='aguas'"
+                    + ",ingreso='17/02/21',personas='5',estancia='3',extra='100' WHERE numhab='2'");
+            pps.executeUpdate();
+        }catch(SQLException ex){
+            System.out.println("no jalo");
+        }
+    }//GEN-LAST:event_jButtonCheckINActionPerformed
 
     /**
      * @param args the command line arguments
