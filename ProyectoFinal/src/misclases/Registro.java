@@ -5,6 +5,7 @@
  */
 package misclases;
 
+import java.util.Calendar;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
@@ -213,56 +214,104 @@ public class Registro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonDisponibilidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDisponibilidadActionPerformed
+        boolean band=true,band2=true;
         // TODO add your handling code here:
         //esto es hola mundo
         //eso ws mas
-        int dias2,personas2,tipo;
-        String nombre=this.jTextFieldNopmbre.getText().trim();
-        String th=this.jTextFieldTipoHab.getText().trim();
-        String ciudad=this.jTextFieldCiudad.getText().trim();
-        String personas=this.jTextFieldPersonaspH.getText().trim();
-        String dias=this.jTextFieldDias.getText().trim();
-        String aux=((JTextField)jDateChooserFecha.getDateEditor().getUiComponent()).getText();
-        dias2=Integer.parseInt(dias);
-        personas2=Integer.parseInt(personas);
-        tipo=Integer.parseInt(th);
         
-        switch(tipo){
-            case 1:
-            {
-                if(personas2>1 && personas2<4){
-                    JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
-                }else{
-                    JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
-                }
-                break; 
+            
+            int dias2=0, personas2=0, tipo=0;
+            String nombre = this.jTextFieldNopmbre.getText().trim();
+            String th = this.jTextFieldTipoHab.getText().trim();
+            String ciudad = this.jTextFieldCiudad.getText().trim();
+            String personas = this.jTextFieldPersonaspH.getText().trim();
+            String dias = this.jTextFieldDias.getText().trim();
+            String aux = ((JTextField) jDateChooserFecha.getDateEditor().getUiComponent()).getText();
+           
+            if(nombre.isEmpty()){
+                band=false;
+                JOptionPane.showMessageDialog(null, "Ingrese el nombre de la persona");
             }
-            case 2:
-            {
-                if(personas2>2 && personas2<5){
-                    JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
-                }else{
-                    JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
-                }
-                break;
+            if(ciudad.isEmpty()){
+                band=false;
+                JOptionPane.showMessageDialog(null, "Ingrese el nombre de la ciudad");
             }
-            case 3:
-            {
-                if(personas2>3 && personas2<6){
-                    JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
-                }else{
-                    JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
-                }
-                break;
+            if(aux.isEmpty()){
+               band=false; 
+               JOptionPane.showMessageDialog(null, "Ingrese la fecha de llegada");
             }
-            default:
-            {
-                JOptionPane.showMessageDialog(null, "Tipo de habitacion no valido");
-                break;
+            if(dias.isEmpty()){
+                band=false;
+                JOptionPane.showMessageDialog(null, "Ingrese los dias a hospedarse ");
+            }
+            if(personas.isEmpty()){
+                band=false;
+                JOptionPane.showMessageDialog(null, "Ingrese la cantidad e personas a hospedarse");
+            }
+            if(th.isEmpty()){
+                band=false;
+                JOptionPane.showMessageDialog(null, "Ingrese el tipo de habitacion deseada");
+            }
+            if(band==true){
+              
+                dias2 = Integer.parseInt(dias);
+               personas2 = Integer.parseInt(personas);
+               tipo = Integer.parseInt(th);
+            }
+            
+            switch (tipo) {
+                case 1: {
+                    if (personas2 > 1 && personas2 < 4) {
+                        JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
+                    } else {
+                        band = false;
+                        JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
+                    }
+                    break;
+                }
+                case 2: {
+                    if (personas2 > 2 && personas2 < 5) {
+                        JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
+                    } else {
+                        band = false;
+                        JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
+                    }
+                    break;
+                }
+                case 3: {
+                    if (personas2 > 3 && personas2 < 6) {
+                        JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
+                    } else {
+                        band = false;
+                        band2=false;
+                        JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
+                    }
+                    break;
+                }
+                default: {
+                    band=false;
+                    JOptionPane.showMessageDialog(null, "Tipo de habitacion no valido");
+                    break;
+                }
+            }
+        if(!band==false){
+            Calendar z=this.jDateChooserFecha.getCalendar();
+            Huesped x=new Huesped();
+            x.setCiudadOrigen(ciudad);
+            x.setEstancia(dias2);
+            x.setIngreso(z);
+            x.setNombre(nombre);
+            x.setPersonas(personas2);
+            x.setTipohab(tipo);
+            new Disponibilidad().setVisible(true);
+        }else{
+            this.jTextFieldPersonaspH.setText("");
+            if(band2==false){
+                this.jTextFieldTipoHab.setText("");
             }
         }
-        new Disponibilidad().setVisible(true);
-       
+        
+
         
         //this.jPanelDatos.setVisible(false);
         //this.jPanelDisponibilidad.setVisible(true);

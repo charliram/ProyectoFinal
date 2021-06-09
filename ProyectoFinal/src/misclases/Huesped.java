@@ -23,6 +23,9 @@ public class Huesped {
         this.numhab = numhab;
     }
 
+    public Huesped() {
+    }
+
     public String getNombre() {
         return nombre;
     }
