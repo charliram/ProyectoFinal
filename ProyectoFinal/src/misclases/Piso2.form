@@ -43,61 +43,11 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="jLabelHab211" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="jLabelHab206" pref="0" max="32767" attributes="0"/>
-                                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabelHab201" min="-2" pref="47" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabelHab207" min="-2" pref="47" max="-2" attributes="0"/>
-                      <Component id="jLabelHab202" min="-2" pref="47" max="-2" attributes="0"/>
-                      <Component id="jLabelHab212" min="-2" pref="49" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabeHab208" min="-2" pref="49" max="-2" attributes="0"/>
-                              <Component id="jLabeHab203" min="-2" pref="49" max="-2" attributes="0"/>
-                              <Component id="jLabelHab213" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabeHab209" min="-2" pref="47" max="-2" attributes="0"/>
-                              <Component id="jLabelHab204" min="-2" pref="47" max="-2" attributes="0"/>
-                              <Component id="jLabelHab214" min="-2" pref="47" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabelHab210" min="-2" pref="49" max="-2" attributes="0"/>
-                              <Component id="jLabelHab205" min="-2" pref="49" max="-2" attributes="0"/>
-                              <Component id="jLabelHab215" min="-2" pref="49" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="0" pref="23" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="237" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="106" max="32767" attributes="0"/>
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -110,33 +60,7 @@
                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabelHab201" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelHab202" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabeHab203" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelHab204" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelHab205" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabelHab206" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelHab207" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabeHab208" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelHab210" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabeHab209" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabelHab213" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelHab214" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelHab215" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="jLabelHab212" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelHab211" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="71" max="32767" attributes="0"/>
+                  <EmptySpace pref="300" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -160,124 +84,6 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
           </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab201">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 201.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab202">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 202.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabeHab203">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 203.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab204">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 204.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab205">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 205.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab206">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 206.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab207">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 207.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabeHab208">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 208.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabeHab209">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 209.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab210">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 210.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab211">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 211.jpg"/>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab212">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 212.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab213">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 213.jpg"/>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab214">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 214.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelHab215">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 215.jpg"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" "/>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
