@@ -5,6 +5,7 @@
  */
 package misclases;
 
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
@@ -225,22 +226,39 @@ public class Registro extends javax.swing.JFrame {
         dias2=Integer.parseInt(dias);
         personas2=Integer.parseInt(personas);
         tipo=Integer.parseInt(th);
+        
         switch(tipo){
             case 1:
             {
-                
+                if(personas2>1 && personas2<4){
+                    JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
+                }else{
+                    JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
+                }
+                break; 
             }
             case 2:
             {
-                
+                if(personas2>2 && personas2<5){
+                    JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
+                }else{
+                    JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
+                }
+                break;
             }
             case 3:
             {
-                
+                if(personas2>3 && personas2<6){
+                    JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
+                }else{
+                    JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
+                }
+                break;
             }
             default:
             {
-                
+                JOptionPane.showMessageDialog(null, "Tipo de habitacion no valido");
+                break;
             }
         }
         new Disponibilidad().setVisible(true);
