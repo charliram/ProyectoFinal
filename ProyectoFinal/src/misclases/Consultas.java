@@ -15,7 +15,9 @@ public class Consultas extends javax.swing.JFrame {
      * Creates new form Consultas
      */
     public Consultas() {
+        
         initComponents();
+        this.jPanelCostoHab.setVisible(false);
     }
 
     /**
@@ -27,6 +29,27 @@ public class Consultas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanelGaleria = new javax.swing.JPanel();
+        jPanelIngresos = new javax.swing.JPanel();
+        jPanelPorcentajeHab = new javax.swing.JPanel();
+        jPanelTotalHab = new javax.swing.JPanel();
+        jPanelPorcentajeOcup = new javax.swing.JPanel();
+        jPanelCostoHab = new javax.swing.JPanel();
+        jLabelImagenHabitacion1 = new javax.swing.JLabel();
+        jLabelImagenHabitacion2 = new javax.swing.JLabel();
+        jLabelImagenHabitacion3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jPanelBusquedaHuesped = new javax.swing.JPanel();
+        jPanelhabitacionesDisp = new javax.swing.JPanel();
+        jPanelExtra = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuconsultas = new javax.swing.JMenu();
         jMenuItemGaleria = new javax.swing.JMenuItem();
@@ -37,10 +60,198 @@ public class Consultas extends javax.swing.JFrame {
         jMenuItemcostoHab = new javax.swing.JMenuItem();
         jMenuItemBusquedaHuesped = new javax.swing.JMenuItem();
         jMenuItemHabitacionesDisp = new javax.swing.JMenuItem();
+        jMenuItemextra = new javax.swing.JMenuItem();
         jMenuSalir = new javax.swing.JMenu();
         jMenuItemsalir = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        javax.swing.GroupLayout jPanelGaleriaLayout = new javax.swing.GroupLayout(jPanelGaleria);
+        jPanelGaleria.setLayout(jPanelGaleriaLayout);
+        jPanelGaleriaLayout.setHorizontalGroup(
+            jPanelGaleriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 420, Short.MAX_VALUE)
+        );
+        jPanelGaleriaLayout.setVerticalGroup(
+            jPanelGaleriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 321, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanelIngresosLayout = new javax.swing.GroupLayout(jPanelIngresos);
+        jPanelIngresos.setLayout(jPanelIngresosLayout);
+        jPanelIngresosLayout.setHorizontalGroup(
+            jPanelIngresosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jPanelIngresosLayout.setVerticalGroup(
+            jPanelIngresosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 174, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanelPorcentajeHabLayout = new javax.swing.GroupLayout(jPanelPorcentajeHab);
+        jPanelPorcentajeHab.setLayout(jPanelPorcentajeHabLayout);
+        jPanelPorcentajeHabLayout.setHorizontalGroup(
+            jPanelPorcentajeHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jPanelPorcentajeHabLayout.setVerticalGroup(
+            jPanelPorcentajeHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 299, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanelTotalHabLayout = new javax.swing.GroupLayout(jPanelTotalHab);
+        jPanelTotalHab.setLayout(jPanelTotalHabLayout);
+        jPanelTotalHabLayout.setHorizontalGroup(
+            jPanelTotalHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jPanelTotalHabLayout.setVerticalGroup(
+            jPanelTotalHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 299, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanelPorcentajeOcupLayout = new javax.swing.GroupLayout(jPanelPorcentajeOcup);
+        jPanelPorcentajeOcup.setLayout(jPanelPorcentajeOcupLayout);
+        jPanelPorcentajeOcupLayout.setHorizontalGroup(
+            jPanelPorcentajeOcupLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jPanelPorcentajeOcupLayout.setVerticalGroup(
+            jPanelPorcentajeOcupLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 299, Short.MAX_VALUE)
+        );
+
+        jLabelImagenHabitacion1.setText(" ");
+
+        jLabelImagenHabitacion2.setText(" ");
+
+        jLabelImagenHabitacion3.setText(" ");
+
+        jLabel1.setFont(new java.awt.Font("Vivaldi", 1, 18)); // NOI18N
+        jLabel1.setText("Habitación");
+
+        jLabel2.setFont(new java.awt.Font("Poor Richard", 1, 18)); // NOI18N
+        jLabel2.setText("Sencilla");
+
+        jLabel3.setFont(new java.awt.Font("Vivaldi", 1, 18)); // NOI18N
+        jLabel3.setText("Precio");
+
+        jLabel4.setFont(new java.awt.Font("Poor Richard", 1, 18)); // NOI18N
+        jLabel4.setText("Doble");
+
+        jLabel5.setFont(new java.awt.Font("Poor Richard", 1, 18)); // NOI18N
+        jLabel5.setText("Triple");
+
+        jLabel6.setFont(new java.awt.Font("Poor Richard", 1, 18)); // NOI18N
+        jLabel6.setText("$2200");
+
+        jLabel7.setFont(new java.awt.Font("Poor Richard", 1, 18)); // NOI18N
+        jLabel7.setText("$4100");
+
+        jLabel8.setFont(new java.awt.Font("Poor Richard", 1, 18)); // NOI18N
+        jLabel8.setText("$6000");
+
+        jLabel9.setFont(new java.awt.Font("Vivaldi", 1, 18)); // NOI18N
+        jLabel9.setText("Costos");
+
+        javax.swing.GroupLayout jPanelCostoHabLayout = new javax.swing.GroupLayout(jPanelCostoHab);
+        jPanelCostoHab.setLayout(jPanelCostoHabLayout);
+        jPanelCostoHabLayout.setHorizontalGroup(
+            jPanelCostoHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelCostoHabLayout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(jPanelCostoHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabelImagenHabitacion3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelImagenHabitacion1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(jLabelImagenHabitacion2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(17, 17, 17)
+                .addGroup(jPanelCostoHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanelCostoHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel1)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                .addGroup(jPanelCostoHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelCostoHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel3)
+                        .addComponent(jLabel6))
+                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(39, 39, 39))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelCostoHabLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel9)
+                .addGap(170, 170, 170))
+        );
+
+        jPanelCostoHabLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel2, jLabel4, jLabel5, jLabel6, jLabel7, jLabel8});
+
+        jPanelCostoHabLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabelImagenHabitacion1, jLabelImagenHabitacion2, jLabelImagenHabitacion3});
+
+        jPanelCostoHabLayout.setVerticalGroup(
+            jPanelCostoHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelCostoHabLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanelCostoHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelCostoHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelImagenHabitacion1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel6))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelCostoHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelImagenHabitacion2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanelCostoHabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelImagenHabitacion3, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel8))
+                .addGap(16, 16, 16))
+        );
+
+        jPanelCostoHabLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabelImagenHabitacion1, jLabelImagenHabitacion2, jLabelImagenHabitacion3});
+
+        jPanelCostoHabLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabel2, jLabel4, jLabel5, jLabel6, jLabel7, jLabel8});
+
+        javax.swing.GroupLayout jPanelBusquedaHuespedLayout = new javax.swing.GroupLayout(jPanelBusquedaHuesped);
+        jPanelBusquedaHuesped.setLayout(jPanelBusquedaHuespedLayout);
+        jPanelBusquedaHuespedLayout.setHorizontalGroup(
+            jPanelBusquedaHuespedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jPanelBusquedaHuespedLayout.setVerticalGroup(
+            jPanelBusquedaHuespedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 299, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanelhabitacionesDispLayout = new javax.swing.GroupLayout(jPanelhabitacionesDisp);
+        jPanelhabitacionesDisp.setLayout(jPanelhabitacionesDispLayout);
+        jPanelhabitacionesDispLayout.setHorizontalGroup(
+            jPanelhabitacionesDispLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jPanelhabitacionesDispLayout.setVerticalGroup(
+            jPanelhabitacionesDispLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 299, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanelExtraLayout = new javax.swing.GroupLayout(jPanelExtra);
+        jPanelExtra.setLayout(jPanelExtraLayout);
+        jPanelExtraLayout.setHorizontalGroup(
+            jPanelExtraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jPanelExtraLayout.setVerticalGroup(
+            jPanelExtraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 240, Short.MAX_VALUE)
+        );
 
         jMenuconsultas.setText("Consultas");
 
@@ -53,6 +264,11 @@ public class Consultas extends javax.swing.JFrame {
         jMenuconsultas.add(jMenuItemGaleria);
 
         jMenuItemIngresos.setText("Ingresos del hotel");
+        jMenuItemIngresos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemIngresosActionPerformed(evt);
+            }
+        });
         jMenuconsultas.add(jMenuItemIngresos);
 
         jMenuItemPorcentajehab.setText("Porcentaje de ocupación por tipo de habitación");
@@ -64,6 +280,11 @@ public class Consultas extends javax.swing.JFrame {
         jMenuconsultas.add(jMenuItemPorcentajehab);
 
         jMenuItemtotalhabitaciones.setText("Total de habitaciones del hotel");
+        jMenuItemtotalhabitaciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemtotalhabitacionesActionPerformed(evt);
+            }
+        });
         jMenuconsultas.add(jMenuItemtotalhabitaciones);
 
         jMenuItemporcentajeOcupacion.setText("Porcentaje de ocupación del hotel");
@@ -75,13 +296,36 @@ public class Consultas extends javax.swing.JFrame {
         jMenuconsultas.add(jMenuItemporcentajeOcupacion);
 
         jMenuItemcostoHab.setText("Costos de habitadiones");
+        jMenuItemcostoHab.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemcostoHabActionPerformed(evt);
+            }
+        });
         jMenuconsultas.add(jMenuItemcostoHab);
 
         jMenuItemBusquedaHuesped.setText("Búsqueda de huésped");
+        jMenuItemBusquedaHuesped.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemBusquedaHuespedActionPerformed(evt);
+            }
+        });
         jMenuconsultas.add(jMenuItemBusquedaHuesped);
 
         jMenuItemHabitacionesDisp.setText("Habitaciones disponibles");
+        jMenuItemHabitacionesDisp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemHabitacionesDispActionPerformed(evt);
+            }
+        });
         jMenuconsultas.add(jMenuItemHabitacionesDisp);
+
+        jMenuItemextra.setText("Consulta extra");
+        jMenuItemextra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemextraActionPerformed(evt);
+            }
+        });
+        jMenuconsultas.add(jMenuItemextra);
 
         jMenuBar1.add(jMenuconsultas);
 
@@ -108,11 +352,85 @@ public class Consultas extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanelCostoHab, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jPanelGaleria, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanelPorcentajeHab, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanelIngresos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanelTotalHab, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanelPorcentajeOcup, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanelBusquedaHuesped, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanelhabitacionesDisp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanelExtra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addComponent(jPanelCostoHab, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jPanelGaleria, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanelPorcentajeHab, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(136, 136, 136)
+                    .addComponent(jPanelIngresos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(11, 11, 11)
+                    .addComponent(jPanelTotalHab, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(11, 11, 11)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(11, 11, 11)
+                    .addComponent(jPanelPorcentajeOcup, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(11, 11, 11)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(11, 11, 11)
+                    .addComponent(jPanelBusquedaHuesped, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(11, 11, 11)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(11, 11, 11)
+                    .addComponent(jPanelhabitacionesDisp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(11, 11, 11)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(40, 40, 40)
+                    .addComponent(jPanelExtra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(41, 41, 41)))
         );
 
         pack();
@@ -120,10 +438,30 @@ public class Consultas extends javax.swing.JFrame {
 
     private void jMenuItemGaleriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGaleriaActionPerformed
         // TODO add your handling code here:
+        this.jPanelTotalHab.setVisible(false);
+        this.jPanelCostoHab.setVisible(false);
+        this.jPanelBusquedaHuesped.setVisible(false);
+        this.jPanelExtra.setVisible(false);
+        this.jPanelIngresos.setVisible(false);
+        this.jPanelPorcentajeHab.setVisible(false);
+        this.jPanelPorcentajeOcup.setVisible(false);
+        this.jPanelhabitacionesDisp.setVisible(false);
+        this.jPanelGaleria.setVisible(true);
+        
     }//GEN-LAST:event_jMenuItemGaleriaActionPerformed
 
     private void jMenuItemporcentajeOcupacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemporcentajeOcupacionActionPerformed
         // TODO add your handling code here:
+        this.jPanelTotalHab.setVisible(false);
+        this.jPanelCostoHab.setVisible(false);
+        this.jPanelBusquedaHuesped.setVisible(false);
+        this.jPanelExtra.setVisible(false);
+        this.jPanelGaleria.setVisible(false);
+        this.jPanelIngresos.setVisible(false);
+        this.jPanelPorcentajeHab.setVisible(false);
+        this.jPanelhabitacionesDisp.setVisible(false);
+         this.jPanelPorcentajeOcup.setVisible(true);
+         
     }//GEN-LAST:event_jMenuItemporcentajeOcupacionActionPerformed
 
     private void jMenuSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuSalirActionPerformed
@@ -133,12 +471,102 @@ public class Consultas extends javax.swing.JFrame {
 
     private void jMenuItemPorcentajehabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemPorcentajehabActionPerformed
         // TODO add your handling code here:
+        this.jPanelCostoHab.setVisible(false);
+        this.jPanelBusquedaHuesped.setVisible(false);
+        this.jPanelExtra.setVisible(false);
+        this.jPanelGaleria.setVisible(false);
+        this.jPanelIngresos.setVisible(false);
+        this.jPanelTotalHab.setVisible(false);
+        this.jPanelPorcentajeOcup.setVisible(false);
+        this.jPanelhabitacionesDisp.setVisible(false);
+        this.jPanelPorcentajeHab.setVisible(true);
     }//GEN-LAST:event_jMenuItemPorcentajehabActionPerformed
 
     private void jMenuItemsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemsalirActionPerformed
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_jMenuItemsalirActionPerformed
+
+    private void jMenuItemcostoHabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemcostoHabActionPerformed
+        // TODO add your handling code here:
+       
+        this.jPanelBusquedaHuesped.setVisible(false);
+        this.jPanelExtra.setVisible(false);
+        this.jPanelTotalHab.setVisible(false);
+        this.jPanelGaleria.setVisible(false);
+        this.jPanelIngresos.setVisible(false);
+        this.jPanelPorcentajeHab.setVisible(false);
+        this.jPanelPorcentajeOcup.setVisible(false);
+        this.jPanelhabitacionesDisp.setVisible(false);
+         this.jPanelCostoHab.setVisible(true);
+    }//GEN-LAST:event_jMenuItemcostoHabActionPerformed
+
+    private void jMenuItemIngresosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemIngresosActionPerformed
+        // TODO add your handling code here:
+        this.jPanelTotalHab.setVisible(false);
+        this.jPanelCostoHab.setVisible(false);
+        this.jPanelBusquedaHuesped.setVisible(false);
+        this.jPanelExtra.setVisible(false);
+        this.jPanelGaleria.setVisible(false);
+        this.jPanelPorcentajeHab.setVisible(false);
+        this.jPanelPorcentajeOcup.setVisible(false);
+        this.jPanelhabitacionesDisp.setVisible(false);
+        this.jPanelIngresos.setVisible(true);
+    }//GEN-LAST:event_jMenuItemIngresosActionPerformed
+
+    private void jMenuItemtotalhabitacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemtotalhabitacionesActionPerformed
+        // TODO add your handling code here:
+        this.jPanelCostoHab.setVisible(false);
+        this.jPanelBusquedaHuesped.setVisible(false);
+        this.jPanelExtra.setVisible(false);
+        this.jPanelGaleria.setVisible(false);
+        this.jPanelIngresos.setVisible(false);
+        this.jPanelPorcentajeHab.setVisible(false);
+        this.jPanelPorcentajeOcup.setVisible(false);
+        this.jPanelhabitacionesDisp.setVisible(false);
+        this.jPanelTotalHab.setVisible(true);
+    }//GEN-LAST:event_jMenuItemtotalhabitacionesActionPerformed
+
+    private void jMenuItemBusquedaHuespedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemBusquedaHuespedActionPerformed
+        // TODO add your handling code here:
+        this.jPanelCostoHab.setVisible(false);
+        this.jPanelTotalHab.setVisible(false);
+        this.jPanelExtra.setVisible(false);
+        this.jPanelGaleria.setVisible(false);
+        this.jPanelIngresos.setVisible(false);
+        this.jPanelPorcentajeHab.setVisible(false);
+        this.jPanelPorcentajeOcup.setVisible(false);
+        this.jPanelhabitacionesDisp.setVisible(false);
+        this.jPanelBusquedaHuesped.setVisible(true);
+    }//GEN-LAST:event_jMenuItemBusquedaHuespedActionPerformed
+
+    private void jMenuItemHabitacionesDispActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemHabitacionesDispActionPerformed
+        // TODO add your handling code here:
+        this.jPanelCostoHab.setVisible(false);
+        this.jPanelBusquedaHuesped.setVisible(false);
+        this.jPanelExtra.setVisible(false);
+        this.jPanelGaleria.setVisible(false);
+        this.jPanelTotalHab.setVisible(false);
+        this.jPanelIngresos.setVisible(false);
+        this.jPanelPorcentajeHab.setVisible(false);
+        this.jPanelPorcentajeOcup.setVisible(false);
+        this.jPanelhabitacionesDisp.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItemHabitacionesDispActionPerformed
+
+    private void jMenuItemextraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemextraActionPerformed
+        // TODO add your handling code here:
+        this.jPanelCostoHab.setVisible(false);
+        this.jPanelBusquedaHuesped.setVisible(false);
+        this.jPanelExtra.setVisible(true);
+        this.jPanelGaleria.setVisible(false);
+        this.jPanelTotalHab.setVisible(false);
+        this.jPanelIngresos.setVisible(false);
+        this.jPanelPorcentajeHab.setVisible(false);
+        this.jPanelPorcentajeOcup.setVisible(false);
+        this.jPanelhabitacionesDisp.setVisible(false);
+        
+    }//GEN-LAST:event_jMenuItemextraActionPerformed
 
     /**
      * @param args the command line arguments
@@ -171,11 +599,24 @@ public class Consultas extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Consultas().setVisible(true);
+                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelImagenHabitacion1;
+    private javax.swing.JLabel jLabelImagenHabitacion2;
+    private javax.swing.JLabel jLabelImagenHabitacion3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItemBusquedaHuesped;
     private javax.swing.JMenuItem jMenuItemGaleria;
@@ -183,10 +624,20 @@ public class Consultas extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemIngresos;
     private javax.swing.JMenuItem jMenuItemPorcentajehab;
     private javax.swing.JMenuItem jMenuItemcostoHab;
+    private javax.swing.JMenuItem jMenuItemextra;
     private javax.swing.JMenuItem jMenuItemporcentajeOcupacion;
     private javax.swing.JMenuItem jMenuItemsalir;
     private javax.swing.JMenuItem jMenuItemtotalhabitaciones;
     private javax.swing.JMenu jMenuSalir;
     private javax.swing.JMenu jMenuconsultas;
+    private javax.swing.JPanel jPanelBusquedaHuesped;
+    private javax.swing.JPanel jPanelCostoHab;
+    private javax.swing.JPanel jPanelExtra;
+    private javax.swing.JPanel jPanelGaleria;
+    private javax.swing.JPanel jPanelIngresos;
+    private javax.swing.JPanel jPanelPorcentajeHab;
+    private javax.swing.JPanel jPanelPorcentajeOcup;
+    private javax.swing.JPanel jPanelTotalHab;
+    private javax.swing.JPanel jPanelhabitacionesDisp;
     // End of variables declaration//GEN-END:variables
 }
