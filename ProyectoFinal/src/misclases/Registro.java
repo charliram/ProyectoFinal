@@ -18,8 +18,10 @@ public class Registro extends javax.swing.JFrame {
      * Creates new form Registro
      */
     public Registro() {
-        
+       
         initComponents();
+         this.jLabelHbitacion.setVisible(false);
+        this.jTextFieldHabitacion.setVisible(false);
         
         
     }
@@ -48,6 +50,8 @@ public class Registro extends javax.swing.JFrame {
         jTextFieldDias = new javax.swing.JTextField();
         jDateChooserFecha = new com.toedter.calendar.JDateChooser();
         jButtonDisponibilidad = new javax.swing.JButton();
+        jLabelHbitacion = new javax.swing.JLabel();
+        jTextFieldHabitacion = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,7 +63,7 @@ public class Registro extends javax.swing.JFrame {
         );
         jPanelDisponibilidadLayout.setVerticalGroup(
             jPanelDisponibilidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 468, Short.MAX_VALUE)
+            .addGap(0, 476, Short.MAX_VALUE)
         );
 
         jPanelDatos.setBackground(new java.awt.Color(204, 204, 204));
@@ -113,6 +117,13 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
+        jLabelHbitacion.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelHbitacion.setText("Habitacion:");
+
+        jTextFieldHabitacion.setBackground(new java.awt.Color(255, 255, 255));
+        jTextFieldHabitacion.setForeground(new java.awt.Color(0, 0, 0));
+        jTextFieldHabitacion.setText(" ");
+
         javax.swing.GroupLayout jPanelDatosLayout = new javax.swing.GroupLayout(jPanelDatos);
         jPanelDatos.setLayout(jPanelDatosLayout);
         jPanelDatosLayout.setHorizontalGroup(
@@ -124,13 +135,15 @@ public class Registro extends javax.swing.JFrame {
                         .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanelDatosLayout.createSequentialGroup()
                                 .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
-                                    .addComponent(jButtonDisponibilidad))
+                                    .addComponent(jButtonDisponibilidad)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
+                                    .addComponent(jLabelHbitacion))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextFieldPersonaspH, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextFieldDias, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jTextFieldPersonaspH, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                                    .addComponent(jTextFieldDias, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                                    .addComponent(jTextFieldHabitacion)))
                             .addGroup(jPanelDatosLayout.createSequentialGroup()
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -178,17 +191,24 @@ public class Registro extends javax.swing.JFrame {
                 .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextFieldCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addGap(35, 35, 35)
-                .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextFieldPersonaspH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelDatosLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jTextFieldPersonaspH))
+                    .addGroup(jPanelDatosLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jTextFieldDias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
+                .addGap(25, 25, 25)
+                .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelHbitacion)
+                    .addComponent(jTextFieldHabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22)
                 .addComponent(jButtonDisponibilidad)
-                .addGap(89, 89, 89))
+                .addGap(72, 72, 72))
         );
 
         jPanelDatosLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jTextFieldDias, jTextFieldPersonaspH});
@@ -218,7 +238,7 @@ public class Registro extends javax.swing.JFrame {
         // TODO add your handling code here:
         //esto es hola mundo
         //eso ws mas
-        
+             
             
             int dias2=0, personas2=0, tipo=0;
             String nombre = this.jTextFieldNopmbre.getText().trim();
@@ -304,6 +324,8 @@ public class Registro extends javax.swing.JFrame {
             x.setPersonas(personas2);
             x.setTipohab(tipo);
             new Disponibilidad().setVisible(true);
+            this.jTextFieldHabitacion.setVisible(true);
+             this.jLabelHbitacion.setVisible(true);
         }else{
             this.jTextFieldPersonaspH.setText("");
             if(band2==false){
@@ -361,10 +383,12 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabelHbitacion;
     private javax.swing.JPanel jPanelDatos;
     private javax.swing.JPanel jPanelDisponibilidad;
     private javax.swing.JTextField jTextFieldCiudad;
     private javax.swing.JTextField jTextFieldDias;
+    private javax.swing.JTextField jTextFieldHabitacion;
     private javax.swing.JTextField jTextFieldNopmbre;
     private javax.swing.JTextField jTextFieldPersonaspH;
     private javax.swing.JTextField jTextFieldTipoHab;
