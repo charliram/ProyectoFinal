@@ -160,48 +160,48 @@ public class Piso2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel201.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 201.jpg"))); // NOI18N
+        jLabel201.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 201.jpg")); // NOI18N
         jLabel201.setText(" ");
 
-        jLabel202.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 202.jpg"))); // NOI18N
+        jLabel202.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 202.jpg")); // NOI18N
 
-        jLabel203.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 203.jpg"))); // NOI18N
+        jLabel203.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 203.jpg")); // NOI18N
         jLabel203.setText(" ");
 
-        jLabel204.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 204.jpg"))); // NOI18N
+        jLabel204.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 204.jpg")); // NOI18N
         jLabel204.setText(" ");
 
-        jLabel205.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 205.jpg"))); // NOI18N
+        jLabel205.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 205.jpg")); // NOI18N
         jLabel205.setText(" ");
 
-        jLabel206.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 206.jpg"))); // NOI18N
+        jLabel206.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 206.jpg")); // NOI18N
         jLabel206.setText(" ");
 
-        jLabel207.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 207.jpg"))); // NOI18N
+        jLabel207.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 207.jpg")); // NOI18N
         jLabel207.setText(" ");
 
-        jLabel209.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 209.jpg"))); // NOI18N
+        jLabel209.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 209.jpg")); // NOI18N
         jLabel209.setText(" ");
 
-        jLabel208.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 208.jpg"))); // NOI18N
+        jLabel208.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 208.jpg")); // NOI18N
         jLabel208.setText(" ");
 
-        jLabel210.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 210.jpg"))); // NOI18N
+        jLabel210.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 210.jpg")); // NOI18N
         jLabel210.setText(" ");
 
-        jLabel211.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 211.jpg"))); // NOI18N
+        jLabel211.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 211.jpg")); // NOI18N
         jLabel211.setText(" ");
 
-        jLabel212.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 212.jpg"))); // NOI18N
+        jLabel212.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 212.jpg")); // NOI18N
         jLabel212.setText(" ");
 
-        jLabel213.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 213.jpg"))); // NOI18N
+        jLabel213.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 213.jpg")); // NOI18N
         jLabel213.setText(" ");
 
-        jLabel214.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 214.jpg"))); // NOI18N
+        jLabel214.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 214.jpg")); // NOI18N
         jLabel214.setText(" ");
 
-        jLabel215.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 215.jpg"))); // NOI18N
+        jLabel215.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 215.jpg")); // NOI18N
         jLabel215.setText(" ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

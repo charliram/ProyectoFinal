@@ -158,48 +158,48 @@ public class Disponibilidad extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
 
-        jLabel101.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 101.jpg")); // NOI18N
+        jLabel101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 101.jpg"))); // NOI18N
 
-        jLabel102.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 102.jpg")); // NOI18N
+        jLabel102.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 102.jpg"))); // NOI18N
         jLabel102.setText(" ");
 
-        jLabel103.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 103.jpg")); // NOI18N
+        jLabel103.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 103.jpg"))); // NOI18N
         jLabel103.setText(" ");
 
-        jLabel104.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 104.jpg")); // NOI18N
+        jLabel104.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 104.jpg"))); // NOI18N
         jLabel104.setText(" ");
 
-        jLabel105.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 105.jpg")); // NOI18N
+        jLabel105.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 105.jpg"))); // NOI18N
         jLabel105.setText(" ");
 
-        jLabel106.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 106.jpg")); // NOI18N
+        jLabel106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 106.jpg"))); // NOI18N
         jLabel106.setText(" ");
 
-        jLabel107.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 107.jpg")); // NOI18N
+        jLabel107.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 107.jpg"))); // NOI18N
         jLabel107.setText(" ");
 
-        jLabel108.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 108.jpg")); // NOI18N
+        jLabel108.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 108.jpg"))); // NOI18N
         jLabel108.setText(" ");
 
-        jLabel110.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 110.jpg")); // NOI18N
+        jLabel110.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 110.jpg"))); // NOI18N
         jLabel110.setText(" ");
 
-        jLabel111.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 111.jpg")); // NOI18N
+        jLabel111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 111.jpg"))); // NOI18N
         jLabel111.setText(" ");
 
-        jLabel112.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 112.jpg")); // NOI18N
+        jLabel112.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 112.jpg"))); // NOI18N
         jLabel112.setText(" ");
 
-        jLabel113.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 113.jpg")); // NOI18N
+        jLabel113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 113.jpg"))); // NOI18N
         jLabel113.setText(" ");
 
-        jLabel109.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 109.jpg")); // NOI18N
+        jLabel109.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 109.jpg"))); // NOI18N
         jLabel109.setText(" ");
 
-        jLabel114.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 114.jpg")); // NOI18N
+        jLabel114.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 114.jpg"))); // NOI18N
         jLabel114.setText(" ");
 
-        jLabel115.setIcon(new javax.swing.ImageIcon("C:\\Users\\fer_o\\OneDrive\\Documentos\\GitHub\\ProyectoFinal\\ProyectoFinal\\src\\imagenes\\Puerta 115.jpg")); // NOI18N
+        jLabel115.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Puerta 115.jpg"))); // NOI18N
         jLabel115.setText(" ");
 
         jComboBox1.setBackground(new java.awt.Color(255, 255, 255));

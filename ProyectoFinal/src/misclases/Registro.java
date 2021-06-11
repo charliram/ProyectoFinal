@@ -322,7 +322,7 @@ public class Registro extends javax.swing.JFrame {
                     if(personas2==2 || personas2==1){
                         band=true;
                     }else{
-                        if(personas2>3 && personas2<5){
+                        if(personas2>=3 && personas2<5){
                             this.extra=(personas2-2);
                         }else{
                             band=false;

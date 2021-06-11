@@ -137,14 +137,14 @@
         <Component class="javax.swing.JLabel" name="jLabel101">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 101.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 101.jpg"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel102">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 102.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 102.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -152,7 +152,7 @@
         <Component class="javax.swing.JLabel" name="jLabel103">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 103.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 103.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -160,7 +160,7 @@
         <Component class="javax.swing.JLabel" name="jLabel104">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 104.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 104.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -168,7 +168,7 @@
         <Component class="javax.swing.JLabel" name="jLabel105">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 105.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 105.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -176,7 +176,7 @@
         <Component class="javax.swing.JLabel" name="jLabel106">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 106.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 106.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -184,7 +184,7 @@
         <Component class="javax.swing.JLabel" name="jLabel107">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 107.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 107.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -192,7 +192,7 @@
         <Component class="javax.swing.JLabel" name="jLabel108">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 108.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 108.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -200,7 +200,7 @@
         <Component class="javax.swing.JLabel" name="jLabel110">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 110.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 110.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -208,7 +208,7 @@
         <Component class="javax.swing.JLabel" name="jLabel111">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 111.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 111.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -216,7 +216,7 @@
         <Component class="javax.swing.JLabel" name="jLabel112">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 112.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 112.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -224,7 +224,7 @@
         <Component class="javax.swing.JLabel" name="jLabel113">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 113.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 113.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -232,7 +232,7 @@
         <Component class="javax.swing.JLabel" name="jLabel109">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 109.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 109.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -240,7 +240,7 @@
         <Component class="javax.swing.JLabel" name="jLabel114">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 114.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 114.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
@@ -248,7 +248,7 @@
         <Component class="javax.swing.JLabel" name="jLabel115">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\fer_o\OneDrive\Documentos\GitHub\ProyectoFinal\ProyectoFinal\src\imagenes\Puerta 115.jpg"/>
+              <Image iconType="3" name="/imagenes/Puerta 115.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
