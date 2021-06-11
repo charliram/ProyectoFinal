@@ -15,7 +15,11 @@ public class Piso2 extends javax.swing.JFrame {
      * Creates new form Piso2
      */
     public Piso2() {
-        System.out.println("entre");
+     
+        initComponents();
+    }
+    public Piso2(int hab[]) {
+        
         initComponents();
     }
 

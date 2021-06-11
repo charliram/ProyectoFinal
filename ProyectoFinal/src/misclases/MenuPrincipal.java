@@ -7,7 +7,13 @@ package misclases;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -22,9 +28,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
      */
     public MenuPrincipal() {
         String p="1",tp="0";
-        int nh=0;
+        int nh=100;
         for (int i = 0; i < 15; i++) {
-            nh=i;
+            nh++;
             if(i<6){
                 tp="1";
             }
@@ -32,6 +38,24 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 tp="2";
             }
             if(i>12){
+                tp="3";
+            }
+            String parte1="Insert into huespedes(piso, numhab, tipohab) VALUES (";
+            String parte2="'"+p+"','"+nh+"','"+tp+"')";
+             String query= parte1+parte2;     
+            this.conn.Update(query);
+        }
+        p="2";
+        nh=200;
+        for (int i = 0; i < 15; i++) {
+            nh++;
+            if(i<3){
+                tp="1";
+            }
+            if(i>=3 && i<=6){
+                tp="2";
+            }
+            if(i>6){
                 tp="3";
             }
             String parte1="Insert into huespedes(piso, numhab, tipohab) VALUES (";
@@ -66,6 +90,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         jButtoncheckOUT.setText("CHECK OUT");
+        jButtoncheckOUT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtoncheckOUTActionPerformed(evt);
+            }
+        });
 
         jButtonConsultas.setText("CONSULTAS");
         jButtonConsultas.addActionListener(new java.awt.event.ActionListener() {
@@ -113,7 +142,56 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void jButtonConsultasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConsultasActionPerformed
         // TODO add your handling code here:
-        new Consultas().setVisible(true);
+        // TODO add your handling code here:
+         ArrayList <Huesped> lista = new ArrayList();
+        String query="select * from huespedes where tipohab ='2'";
+        this.conn.Consult(query);
+        int n=0;
+        try{
+        this.conn.rs.last();
+        n=this.conn.rs.getRow();
+        this.conn.rs.first();
+        }catch(Exception e){
+            System.out.println("Error#1 ...");
+        }
+        if (n != 0) {
+            System.out.println("n "+n);
+            
+            int datos[]=new int [3];
+            String nombre="";
+            for (int i = 0; i < n; i++) {
+                try{
+                    Huesped x=new Huesped();
+               datos[0]=this.conn.rs.getInt(2);
+               datos[1]=this.conn.rs.getInt(8);
+               datos[2]=this.conn.rs.getInt(7);
+               nombre=this.conn.rs.getString(1);
+               x.setTipohab(datos[0]);
+               x.setNumhab(datos[1]);
+               x.setPiso(datos[2]);
+               lista.add(x);
+                this.conn.rs.next();
+                }catch(Exception e){
+                    System.out.println("Error#2 ..."+ e.getMessage());
+            }
+        }
+            /*System.out.println("final"+datos[0]);
+            System.out.println("final"+datos[1]);
+            System.out.println("final"+datos[2]);
+            System.out.println("final"+nombre);*/
+            for (int i = 0; i < lista.size(); i++) {
+                System.out.println(lista.get(i).getNumhab());
+            }
+            //String columnas[]={"Habitacion","Paciente","Diagnostico"};
+           // jTableConsulta2.setModel(new DefaultTableModel(datos,columnas));
+            System.out.println("Tabla lista");
+        }else{
+            JOptionPane.showMessageDialog(this, "No hay datos ...");
+        }
+            new Consultas().setVisible(true);
+        
+        
+      
         
     }//GEN-LAST:event_jButtonConsultasActionPerformed
 
@@ -127,12 +205,17 @@ public class MenuPrincipal extends javax.swing.JFrame {
         
         try{
             PreparedStatement pps=this.con.prepareStatement("UPDATE huespedes SET nombre='juan',ciudad='aguas'"
-                    + ",ingreso='17/02/21',personas='5',estancia='3',extra='100' WHERE numhab='2'");
+                    + ",ingreso='17/02/21',personas='5',estancia='3',extra='100' WHERE numhab='101'");
             pps.executeUpdate();
         }catch(SQLException ex){
             System.out.println("no jalo");
         }
     }//GEN-LAST:event_jButtonCheckINActionPerformed
+
+    private void jButtoncheckOUTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtoncheckOUTActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButtoncheckOUTActionPerformed
 
     /**
      * @param args the command line arguments

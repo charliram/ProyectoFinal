@@ -5,6 +5,10 @@
  */
 package misclases;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Calendar;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
@@ -14,6 +18,11 @@ import javax.swing.JTextField;
  * @author fer_o
  */
 public class Registro extends javax.swing.JFrame {
+    private MySqlConn conn=new MySqlConn();
+    
+   Connection con=conn.conn;
+   int dispo[]=new int[15];
+   int extra;
     /**
      * Creates new form Registro
      */
@@ -52,6 +61,7 @@ public class Registro extends javax.swing.JFrame {
         jButtonDisponibilidad = new javax.swing.JButton();
         jLabelHbitacion = new javax.swing.JLabel();
         jTextFieldHabitacion = new javax.swing.JTextField();
+        jButtonReservar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -109,6 +119,7 @@ public class Registro extends javax.swing.JFrame {
         jTextFieldDias.setText(" ");
 
         jDateChooserFecha.setBackground(new java.awt.Color(255, 255, 255));
+        jDateChooserFecha.setDateFormatString("yyyy/MM/dd");
 
         jButtonDisponibilidad.setText("Disponibilidad");
         jButtonDisponibilidad.addActionListener(new java.awt.event.ActionListener() {
@@ -123,6 +134,13 @@ public class Registro extends javax.swing.JFrame {
         jTextFieldHabitacion.setBackground(new java.awt.Color(255, 255, 255));
         jTextFieldHabitacion.setForeground(new java.awt.Color(0, 0, 0));
         jTextFieldHabitacion.setText(" ");
+
+        jButtonReservar.setText("Reservar");
+        jButtonReservar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonReservarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelDatosLayout = new javax.swing.GroupLayout(jPanelDatos);
         jPanelDatos.setLayout(jPanelDatosLayout);
@@ -139,11 +157,16 @@ public class Registro extends javax.swing.JFrame {
                                     .addComponent(jButtonDisponibilidad)
                                     .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
                                     .addComponent(jLabelHbitacion))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextFieldPersonaspH, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-                                    .addComponent(jTextFieldDias, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-                                    .addComponent(jTextFieldHabitacion)))
+                                .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanelDatosLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jTextFieldPersonaspH, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                                            .addComponent(jTextFieldDias, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                                            .addComponent(jTextFieldHabitacion)))
+                                    .addGroup(jPanelDatosLayout.createSequentialGroup()
+                                        .addGap(79, 79, 79)
+                                        .addComponent(jButtonReservar))))
                             .addGroup(jPanelDatosLayout.createSequentialGroup()
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -207,7 +230,9 @@ public class Registro extends javax.swing.JFrame {
                     .addComponent(jLabelHbitacion)
                     .addComponent(jTextFieldHabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22)
-                .addComponent(jButtonDisponibilidad)
+                .addGroup(jPanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonDisponibilidad)
+                    .addComponent(jButtonReservar))
                 .addGap(72, 72, 72))
         );
 
@@ -281,31 +306,39 @@ public class Registro extends javax.swing.JFrame {
             
             switch (tipo) {
                 case 1: {
-                    if (personas2 > 1 && personas2 < 4) {
-                        JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
-                    } else {
-                        band = false;
-                        JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
-                    }
+                    if(personas2==1){
+                        band=true;
+                    }else{
+                        if(personas2>1 && personas2<4){
+                            this.extra=(personas2-1);
+                        }else{
+                            band=false;
+                        }
+                    }                    
                     break;
                 }
                 case 2: {
-                    if (personas2 > 2 && personas2 < 5) {
-                        JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
-                    } else {
-                        band = false;
-                        JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
-                    }
+                    if(personas2==2 || personas2==1){
+                        band=true;
+                    }else{
+                        if(personas2>3 && personas2<5){
+                            this.extra=(personas2-2);
+                        }else{
+                            band=false;
+                        }
+                    } 
                     break;
                 }
                 case 3: {
-                    if (personas2 > 3 && personas2 < 6) {
-                        JOptionPane.showMessageDialog(null, "Por persona extra el cargo es de $200");
-                    } else {
-                        band = false;
-                        band2=false;
-                        JOptionPane.showMessageDialog(null, "Solo es posible incluir dos personas extra");
-                    }
+                    if(personas2==3 || personas2==2 || personas2==1){
+                        band=true;
+                    }else{
+                        if(personas2>3 && personas2<6){
+                            this.extra=(personas2-3);
+                        }else{
+                            band=false;
+                        }
+                    } 
                     break;
                 }
                 default: {
@@ -315,17 +348,30 @@ public class Registro extends javax.swing.JFrame {
                 }
             }
         if(!band==false){
-            Calendar z=this.jDateChooserFecha.getCalendar();
+           /* Calendar z=this.jDateChooserFecha.getCalendar();
+            Calendar nueva=this.dispofecha(z,dias2 );
             Huesped x=new Huesped();
             x.setCiudadOrigen(ciudad);
             x.setEstancia(dias2);
             x.setIngreso(z);
+            x.setSalida(nueva);
             x.setNombre(nombre);
             x.setPersonas(personas2);
-            x.setTipohab(tipo);
-            new Disponibilidad().setVisible(true);
+            x.setTipohab(tipo);*/
+            this.habitacionesdisp(tipo);
+            
+            //new Disponibilidad().setVisible(true);
+           
+            this.jTextFieldCiudad.disable();
+            this.jTextFieldDias.disable();
+            this.jTextFieldNopmbre.disable();
+            this.jTextFieldPersonaspH.disable();
+            this.jTextFieldTipoHab.disable();
             this.jTextFieldHabitacion.setVisible(true);
-             this.jLabelHbitacion.setVisible(true);
+            this.jLabelHbitacion.setVisible(true);
+            
+           
+            
         }else{
             this.jTextFieldPersonaspH.setText("");
             if(band2==false){
@@ -339,9 +385,147 @@ public class Registro extends javax.swing.JFrame {
         //this.jPanelDisponibilidad.setVisible(true);
     }//GEN-LAST:event_jButtonDisponibilidadActionPerformed
 
+    private void jButtonReservarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonReservarActionPerformed
+        // TODO add your handling code here:
+            String nombre = this.jTextFieldNopmbre.getText().trim();
+            String th = this.jTextFieldTipoHab.getText().trim();
+            String ciudad = this.jTextFieldCiudad.getText().trim();
+            String personas = this.jTextFieldPersonaspH.getText().trim();
+            String dias = this.jTextFieldDias.getText().trim();
+            String aux = ((JTextField) jDateChooserFecha.getDateEditor().getUiComponent()).getText();
+           
+            
+             int  dias2 = Integer.parseInt(dias);
+             int  personas2 = Integer.parseInt(personas);
+              int tipo = Integer.parseInt(th);
+            
+            Calendar z=this.jDateChooserFecha.getCalendar();
+            Calendar nueva=this.dispofecha(z,dias2 );
+            Huesped x=new Huesped();
+            x.setCiudadOrigen(ciudad);
+            x.setEstancia(dias2);
+            x.setIngreso(z);
+            x.setSalida(nueva);
+            x.setNombre(nombre);
+            x.setPersonas(personas2);
+            x.setTipohab(tipo);
+            
+            String hab=this.jTextFieldHabitacion.getText().trim();
+            int nhab=Integer.parseInt(hab);
+            if(this.correcto(x, nhab)){
+                System.out.println("ojkey");
+            }else{
+                System.out.println("mal");
+            }
+            
+    }//GEN-LAST:event_jButtonReservarActionPerformed
+
     /**
+     * @param fecha
      * @param args the command line arguments
      */
+    public Calendar dispofecha(Calendar fecha,int dias){
+        fecha.add(Calendar.DATE, dias);
+        return fecha;
+    }
+    public void habitacionesdisp(int th){
+         ArrayList <Huesped> lista = new ArrayList();
+        String query="select * from huespedes where tipohab ='"+th+"'";
+        this.conn.Consult(query);
+        int n=0;
+        try{
+        this.conn.rs.last();
+        n=this.conn.rs.getRow();
+        this.conn.rs.first();
+        }catch(Exception e){
+            System.out.println("Error#1 ...");
+        }
+        if (n != 0) {
+            System.out.println("n "+n);
+            
+            int datos[]=new int [3];
+            String nombre="";
+            for (int i = 0; i < n; i++) {
+                try{
+               Huesped x=new Huesped();
+               datos[0]=this.conn.rs.getInt(2);
+               datos[1]=this.conn.rs.getInt(8);
+               datos[2]=this.conn.rs.getInt(7);
+               nombre=this.conn.rs.getString(1);
+               x.setTipohab(datos[0]);
+               x.setNumhab(datos[1]);
+               x.setPiso(datos[2]);
+               lista.add(x);
+                this.conn.rs.next();
+                }catch(Exception e){
+                    System.out.println("Error#2 ..."+ e.getMessage());
+            }
+        }
+            
+            //int dispo[]=new int[15];
+            for (int i = 0; i < lista.size(); i++) {
+                dispo[i]=lista.get(i).getNumhab();
+            }
+            new Disponibilidad(dispo).setVisible(true);
+            //String columnas[]={"Habitacion","Paciente","Diagnostico"};
+           // jTableConsulta2.setModel(new DefaultTableModel(datos,columnas));
+           
+        }else{
+            JOptionPane.showMessageDialog(this, "No hay datos ...");
+        }
+            
+    }
+    public boolean correcto(Huesped x,int hab){
+        
+        boolean res=true,band2=true;
+        if((hab<=100 || hab>115)){
+            
+            return false;
+            
+        }else{
+            if(hab>115 && hab<=200){
+                
+                return false;
+                
+            }else{
+                if(hab>215){
+                    
+                    return false;
+                }
+            }
+        }
+        for (int i = 0; i < 15; i++) {
+            if (hab == this.dispo[i]) {
+
+                String dia = String.valueOf(x.salida.get(Calendar.DATE)) ;
+                String mes = String.valueOf(x.salida.get(Calendar.MONTH) + 1) + "/"; //'2021/06/09
+                String año = String.valueOf(x.salida.get(Calendar.YEAR))+"/";
+                String union = año + mes + dia;//17/02/21
+                System.out.println(union);
+                String aux = ((JTextField) jDateChooserFecha.getDateEditor().getUiComponent()).getText();
+                System.out.println(aux);
+                String actual="UPDATE huespedes SET nombre='" + x.getNombre() + "',"
+                            + "ciudad='" + x.getCiudadOrigen() + "',ingreso='" + aux + "',personas='" + x.getPersonas()
+                            + "',estancia='" + x.getEstancia()
+                            + "',extra='" + (this.extra * 200) + "' WHERE numhab='" + hab + "'";
+                System.out.println(actual);
+                //AQUI VA EL RECIBO
+                try {
+                    PreparedStatement pps = this.con.prepareStatement(actual);
+                    pps.executeUpdate();
+                } catch (SQLException ex) {
+                    System.out.println("no jalo");
+                }
+            }
+            band2 = false;
+        }
+        if (band2 == false) {
+            return false;
+        }
+
+      return res;
+    }
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -376,6 +560,7 @@ public class Registro extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonDisponibilidad;
+    private javax.swing.JButton jButtonReservar;
     private com.toedter.calendar.JDateChooser jDateChooserFecha;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

@@ -11,6 +11,8 @@ public class Huesped {
     int estancia;
     int piso;
     int numhab;
+    int extra;
+    Calendar salida;
 
     public Huesped(String nombre, int tipohab, String ciudadOrigen, Calendar ingreso, int personas, int estancia, int piso, int numhab) {
         this.nombre = nombre;
@@ -70,6 +72,14 @@ public class Huesped {
         return estancia;
     }
 
+    public int getExtra() {
+        return extra;
+    }
+
+    public void setExtra(int extra) {
+        this.extra = extra;
+    }
+
     public void setEstancia(int estancia) {
         this.estancia = estancia;
     }
@@ -89,6 +99,11 @@ public class Huesped {
     public void setNumhab(int numhab) {
         this.numhab = numhab;
     }
+
+    public void setSalida(Calendar salida) {
+        this.salida = salida;
+    }
+   
            
     
 }
