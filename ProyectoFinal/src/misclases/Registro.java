@@ -29,6 +29,7 @@ public class Registro extends javax.swing.JFrame {
     public Registro() {
        
         initComponents();
+        this.jButtonReservar.setVisible(false);
          this.jLabelHbitacion.setVisible(false);
         this.jTextFieldHabitacion.setVisible(false);
         
@@ -361,7 +362,7 @@ public class Registro extends javax.swing.JFrame {
             this.habitacionesdisp(tipo);
             
             //new Disponibilidad().setVisible(true);
-           
+           this.jButtonReservar.setVisible(true);
             this.jTextFieldCiudad.disable();
             this.jTextFieldDias.disable();
             this.jTextFieldNopmbre.disable();
@@ -413,24 +414,23 @@ public class Registro extends javax.swing.JFrame {
             String hab=this.jTextFieldHabitacion.getText().trim();
             int nhab=Integer.parseInt(hab);
             if(this.correcto(x, nhab)){
-                System.out.println("ojkey");
+                new recibo().setVisible(true);
+                dispose();
+                
             }else{
-                System.out.println("mal");
+                JOptionPane.showMessageDialog(this, "ERROR, habitacion no valida");
             }
             
     }//GEN-LAST:event_jButtonReservarActionPerformed
 
-    /**
-     * @param fecha
-     * @param args the command line arguments
-     */
+    
     public Calendar dispofecha(Calendar fecha,int dias){
         fecha.add(Calendar.DATE, dias);
         return fecha;
     }
     public void habitacionesdisp(int th){
          ArrayList <Huesped> lista = new ArrayList();
-        String query="select * from huespedes where tipohab ='"+th+"'";
+        String query="select * from huespedes where tipohab ='"+th+"' && nombre IS NULL";
         this.conn.Consult(query);
         int n=0;
         try{
@@ -477,7 +477,7 @@ public class Registro extends javax.swing.JFrame {
     }
     public boolean correcto(Huesped x,int hab){
         
-        boolean res=true,band2=true;
+        boolean res=true,band2=false;
         if((hab<=100 || hab>115)){
             
             return false;
@@ -496,7 +496,7 @@ public class Registro extends javax.swing.JFrame {
         }
         for (int i = 0; i < 15; i++) {
             if (hab == this.dispo[i]) {
-
+                band2=true;
                 String dia = String.valueOf(x.salida.get(Calendar.DATE)) ;
                 String mes = String.valueOf(x.salida.get(Calendar.MONTH) + 1) + "/"; //'2021/06/09
                 String año = String.valueOf(x.salida.get(Calendar.YEAR))+"/";
@@ -517,7 +517,9 @@ public class Registro extends javax.swing.JFrame {
                     System.out.println("no jalo");
                 }
             }
-            band2 = false;
+                
+            
+            
         }
         if (band2 == false) {
             return false;

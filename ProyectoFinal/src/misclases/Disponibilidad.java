@@ -10,7 +10,7 @@ package misclases;
  * @author fer_o
  */
 public class Disponibilidad extends javax.swing.JFrame {
-
+    int []dispo=new int[15];
     /**
      * Creates new form Disponibilidad
      */
@@ -23,6 +23,7 @@ public class Disponibilidad extends javax.swing.JFrame {
     }
     
     public Disponibilidad(int hab[]) {
+         this.dispo=hab;
          
         initComponents();
         this.jLabel101.setVisible(false);
@@ -331,9 +332,11 @@ public class Disponibilidad extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
        //AQUI VIENE LA VALIDACION DEL PISO 2
-        
-        
-        new Piso2().setVisible(true);
+        System.out.println("NUEVO");
+        for (int i = 0; i < 15; i++) {
+            System.out.println(dispo[i]);
+        }
+        new Piso2(dispo).setVisible(true);
         dispose();
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
